@@ -1,0 +1,10 @@
+.brand-area {
+    
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        padding: 30px 0px;
+    }
+}

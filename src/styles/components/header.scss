@@ -1,0 +1,22 @@
+.header {
+    background: $headerGray-bg;
+    color: $headerGray;
+    font-family: Arial, Helvetica, sans-serif;
+    &__left {
+        width: 70%;
+    }
+    &__right {
+        width: 30%;
+        display: flex;
+        padding: 10px;
+    }
+    &__row{
+        display: flex;
+    }
+    &__currency{
+            margin-right: 35px;
+            display: block;
+            font-size: 13px;
+            
+    }
+}

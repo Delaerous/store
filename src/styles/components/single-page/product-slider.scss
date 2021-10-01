@@ -1,0 +1,21 @@
+.product-slider{
+    &__pager ul {
+        display: flex;
+    }
+    &__wrapper{
+        width: 50%;
+    }
+    
+    
+}
+
+.pager{
+    &__item{
+        height: 25%;
+
+    }
+    &__img{
+        height: 25%;
+        
+    }
+}

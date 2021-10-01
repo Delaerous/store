@@ -1,0 +1,38 @@
+.our-products{
+    &__list{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__header{
+        position: relative;
+    }
+    &__title{
+        margin-right: 25px;
+        font-family: raleway;
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 40px;
+        &--footer{
+            
+            
+            color:white;
+            margin-bottom: 15px;
+            
+        }
+        &--blue{
+            color:#999999;
+            font-weight: 200;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+    }
+    &__link{
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        background: $blue;
+        color: #fff;
+        padding: 3px 15px;
+    }
+}

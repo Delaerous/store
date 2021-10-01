@@ -1,0 +1,21 @@
+.breadcrumbs{
+    display: flex;
+    &__item{
+        &::after {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+            
+          }
+        &:last-child::after{
+            content: "";
+        }
+    }
+    &__link{
+        color:$blue;
+        &:hover{
+            color:$green;
+            text-decoration: underline;
+        }
+    }
+}

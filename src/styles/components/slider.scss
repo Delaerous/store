@@ -1,0 +1,147 @@
+.slider{
+    display: flex ;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    &__text{
+        position: absolute;
+        right: 282px;
+        top: 110px;
+    }
+    &__title{
+        font-size: 30px;
+        &--green{
+            color:#1bd172;
+              }
+    }
+    &__description{
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    &__button{
+      position: relative;
+        border: 1px solid #eaeaea;
+        padding: 1px;
+        min-height: 34px;
+        background: #fff;
+        display: inline-block;
+        width: auto;
+        line-height: 30px;
+        padding-left: 40px;
+        padding-right: 20px;
+        margin: 0;
+        color: #666666;
+        border-radius: 17px;
+        transition: all 1s ease;
+        margin-top: 10px;
+        font-size: 14px;
+       
+        &:hover .slider__link-icon{
+          transform: translateX(390%);
+          
+        }
+        &:hover .slider__link{
+          transform: translateX(-60%);
+          color:$green;
+          text-decoration: underline;
+          
+        }
+    }
+    &__link{
+      transition: all 1s ease-in-out;
+      display: inline-block;
+       &-icon{
+        transition: all 1s ease-in-out;
+         max-height: 30px;
+         max-width:25px ;
+         vertical-align: middle;
+         background-color:$blue;
+         border-radius: 50%;
+         color: white;
+         position: absolute;
+         left: 0;
+
+       }
+        
+    }
+}
+
+
+
+  .arrow-left,
+  .arrow-right{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.45s ease;
+    line-height: 29px;
+    overflow: hidden;
+    fill: $blue;
+    &:hover{
+      background: $blue;
+      color: #fff;
+      border-color: $blue;
+    }
+  }
+  
+  .arrow-left {
+    transform: rotate(180deg);
+    left: 0;
+    position: absolute;
+    top: 46%; 
+  
+   
+  
+  }
+  
+  .arrow-right {
+    
+    position: absolute;
+    right: 13%;
+    
+   
+  }
+  .slider__box{
+    position: relative;
+    &:hover{
+      .arrow-left{
+        left: 7%;
+        
+      }
+      .arrow-right{
+        right: 16%;
+      }
+  }
+  }
+  .slider .bx-pager {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .slider .bx-pager-item {
+    display: inline-block;
+    margin: 0 4px;
+  }
+  .slider .bx-pager-item a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #999;
+    overflow: hidden;
+    text-indent: 999px;    
+    background:#999;
+  }
+  .slider .bx-pager-item a.active {
+    background: #1bd172;
+  }
+  .slider .bx-pager-item a:hover {
+    background: #1bd172;
+  }

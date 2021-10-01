@@ -1,0 +1,22 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    &__email{
+        font-size: 18px;
+        padding: 7px 20px;
+        margin-bottom: 15px;
+        outline: none;
+    }
+    &__submit{
+        color:white;
+        border: none;
+        width: 60%;
+        font-size: 18px;
+        padding: 7px 20px;
+        text-transform: uppercase;
+        background-color: $blue;
+        &:hover{
+            background-color:black;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.shopping-item{
+    margin-top: 40px;
+    font-size: 18px;
+    position: relative;
+}
+.shopping{
+    &__link{
+        display: flex;
+        padding: 10px;
+        border: 1px solid $border-gray;
+        transition: all 1s ease-in-out;
+        &:hover{
+            color:white;
+            background-color: $blue;
+            .shopping__amount{
+                background-color:black;
+                
+            }
+        }
+    }
+    &__amount{
+        position: absolute;
+        right: -4px;
+        top: -9px;
+        background-color: $blue;
+        border-radius: 50%;
+        color: white;
+        width: 20px;
+        height: 20px;
+        padding-top: 4px;
+        font-size: 10px;
+        text-align: center;
+    }
+    &__cart{
+        &-icon{
+            max-height: 25px;
+            max-width: 23px;
+            padding-left: 5px;
+        }
+    }
+}

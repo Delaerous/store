@@ -1,0 +1,14 @@
+.category-name{
+    display: flex;
+    margin-bottom: 30px;
+    &__list{
+        display: flex;
+        margin-right: 10px;
+    }
+    &__item {
+        padding-left: 10px;
+    }
+    &__link{
+        color:$blue;
+    }
+}

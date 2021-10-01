@@ -1,0 +1,15 @@
+.page-title{
+    background: url("../../img/crossword.png") repeat  $blue;
+    &__wrapper{
+        text-align: center;
+     
+    }
+    &__text{
+        font-family: Raleway;
+        font-size: 50px;
+        padding: 50px 0;
+        font-weight: 200;
+        color: white;
+        margin: 0;
+    }
+}

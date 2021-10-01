@@ -1,0 +1,29 @@
+.main-menu{
+    color:$main-menu;
+    background-color:$headerGray-bg;
+    &__list{
+        display: flex;
+        
+    }
+    &__link{
+        padding: 19px 21px;
+        display: block;
+        &:hover{    
+            background-color:$blue;
+            color: white;
+        }
+        &--active{
+            background-color:$blue;
+            color: white;
+        }
+    }
+    
+}
+.sticky-menu{
+    position: fixed;
+    top: 0;
+    
+    z-index: 100;
+    width: 100%;
+    transition: 0.4s;
+}

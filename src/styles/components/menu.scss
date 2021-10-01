@@ -1,0 +1,24 @@
+.menu{
+    &__list{
+        display: flex;
+        :hover{
+            text-decoration: underline;
+            color:$green;
+        }
+
+    }
+    &__item{
+        display: flex;
+        font-size: 13px;
+        margin-right: 5px;
+        padding: 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    &__icon{
+        max-height: 16px;
+        max-width: 10px;
+        margin-right: 5px;
+    }
+   
+} 

@@ -1,0 +1,32 @@
+.device-description{
+    width: 50%;
+    padding-left: 5%;
+    &__title{
+        font-size: 25px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+}
+.add-tocart{
+    margin-bottom: 30px;
+    &__quanity{
+        width: 13%;
+        margin-right: 25px;
+        border: 1px solid #5a88ca;
+        padding: 5px;
+    }
+    &__btn{
+        background: none repeat scroll 0 0 $blue;
+        border: medium none;
+        color: #fff;
+        padding: 11px 20px;
+        text-transform: uppercase;
+        &:hover{
+            background-color:$black;
+            color: $white;
+        }
+        &--small{
+            width: 25%;
+        }
+    }
+}

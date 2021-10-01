@@ -1,0 +1,35 @@
+.footer-top{
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 25px;
+    }
+    &__content{
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    &__item{
+        padding: 10px 0px;
+        &:nth-child(1) {
+            padding: 0 0 5px 0;
+        }
+        &:hover{
+            color:$green;
+            text-decoration: underline;
+        }
+    }
+    &__link{
+        
+        border-bottom: 1px dashed #555;
+        display: block;
+        padding: 5px 0px;
+        &:nth-child(1) {
+            padding: 0 0 5px 0;
+        }
+
+    }
+}
+.blue{
+    color:$blue;
+}

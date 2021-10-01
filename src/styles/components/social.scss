@@ -1,0 +1,23 @@
+.social{
+    &__list{
+        display: flex;
+    }
+    &__link{
+        
+        &-item{
+            padding: 10px;
+            max-width: 40px;
+            max-height: 40px;
+            background-color:$blue;
+            color:white;
+            margin-right: 10px;
+            &:hover{
+                background-color:black;
+                border: 1px solid #666;
+                color: $green;
+            }
+            
+        }
+    }
+    
+}
