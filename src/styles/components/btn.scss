@@ -1,0 +1,15 @@
+.btn{
+        color:white;
+        border: none;
+        padding: 7px 20px;
+        text-transform: uppercase;
+        background-color: $blue;
+        padding: 11px 20px;
+        text-transform: uppercase;
+        &--small{
+            width: 33%;
+        }
+        &:hover{
+            background-color:black;
+        }
+}

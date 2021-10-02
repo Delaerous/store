@@ -1,0 +1,12 @@
+.quanity{
+    &__change{
+        background-color: $blue;
+        border: none;
+        color: $white;
+        height: 25px;
+        width: 25px;
+    }
+    &__number{
+        max-width: 50px;
+    }
+}

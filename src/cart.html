@@ -101,10 +101,10 @@
                         <a href="shop.html" class="main-menu__link ">SHOP PAGE</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="single-product.html" class="main-menu__link main-menu__link--active">SINGLE PRODUCT</a>
+                        <a href="single-product.html" class="main-menu__link">SINGLE PRODUCT</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="cart.html" class="main-menu__link">CART</a>
+                        <a href="cart.html" class="main-menu__link main-menu__link--active">CART</a>
                     </li>
                     <li class="main-menu__item">
                         <a href="#" class="main-menu__link">CHECKOUT</a>
@@ -125,7 +125,7 @@
         <div class="page-title">
             <div class="container">
                 <div class="page-title__wrapper">
-                    <h1 class="page-title__text">Single</h1>
+                    <h1 class="page-title__text">Cart</h1>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
                                 <h3 class="sidebar__title">SEARCH PRODUCTS</h3>
                                 <form action="#" class="sidebar__form">
                                     <input type="search" class="sidebar__input" placeholder="Search products..." >
-                                    <input class="sidebar__btn" type="button" value="SEARCH">
+                                    <input class="btn btn--small" type="button" value="SEARCH">
                                 </form>
                             </div>
                             <div class="sidebar__item">
@@ -206,174 +206,66 @@
                         </div>
                     </aside>
                     <div class="main__content">
-                        <section class="single-product">
-                            <div class="breadcrumbs__wrapper">
-                                <ul class="breadcrumbs">
-                                    <li class="breadcrumbs__item">
-                                        <a href="index.html" class="breadcrumbs__link">Home</a>
-                                    </li>
-                                    <li class="breadcrumbs__item">
-                                        <a href="index.html" class="breadcrumbs__link">Category</a>
-                                    </li>
-                                    <li class="breadcrumbs__item">
-                                        <a href="#" class="breadcrumbs__link breadcrumbs__link--active"> Sony Smart TV </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="single-product__content">
-                                <div class="product-slider__wrapper">
-                                    <div class="product-slider">
-                                        <ul class="product-slider__list">
-                                            <li class="product-slider__item">
-                                                <a href="#" class="single-product__link">
-                                                    <img src="./img/product/product-1.jpg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="product-slider__item">
-                                                <a href="#" class="single-product__link">
-                                                    <img src="./img/product/product-2.jpg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="product-slider__item">
-                                                <a href="#" class="single-product__link">
-                                                    <img src="./img/product/product-3.jpg" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-slider__pager pager">
-                                    <ul>
-                                        <li class="pager__item">
-                                            <a data-slide-index="0">
-                                                <img class="pager__img" src="./img/product/product-1.jpg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="pager__item">
-                                            <a data-slide-index="1">
-                                                <img class="pager__img" src="./img/product/product-2.jpg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="pager__item">
-                                            <a data-slide-index="2">
-                                                <img class="pager__img" src="./img/product/product-3.jpg" alt="">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                </div>
-                                <div class="single-product__main device-description">
-                                    <h4 class="device-description__title">Sony Smart TV</h4>
-                                    <div class="carousel__price">
-                                        <div class="carousel__price--new">$1200</div>
-                                        <div class="carousel__price--old">$1350</div>
-                                    </div>
-                                    <form class="add-tocart" action="#">
-                                        <input class="add-tocart__quanity" type="number" id="tentacles" name="tentacles" min="1" max="100">
-                                        <input class="add-tocart__btn" type="button" value="ADD TO CART">
-                                    </form>
-                                    <div class="device-description__category category-name">
-                                        <ul class="category-name__list"> Category:
-                                            <li class="category-name__item">
-                                                <a href="#" class="category-name__link">Summer.</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="category-name__list"> Tags:
-                                            <li class="category-name__item">
-                                                <a href="#" class="category-name__link">awesome,</a>
-                                                <a href="#" class="category-name__link">best,</a>
-                                                <a href="#" class="category-name__link">salle.</a>
-                                            </li>
-                                        </ul>
-    
-                                    </div>
-                                    <div class="device-description__content tabpanel">
-                                        <ul class="tabpanel__list">
-                                            <li class="tabpanel__item">
-                                                <button  class="tabpanel__tab tabpanel__tab--active " id="Description">
-                                                    Description
-                                                </button>
-                                            </li>
-                                            <li class="tabpanel__item">
-                                                <button  class="tabpanel__tab" id="Reviews">
-                                                    Reviews
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <div class="tabpanel__content">
-                                            <div id="description-content" class="tabpanel__description enabled">Product Description
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.
-                                                
-                                                Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</div>
-                                            <form id="reviews-content"  class="tabpanel__form desc-form">
-                                                <h3 class="desc-form__title">
-                                                    Reviews
-                                                </h3>
-                                                <label class="desc-form__label" for="name">Name</label>
-                                                <input class="desc-form__input" type="text" placeholder="">
-                                                <label class="desc-form__label" for="email">Email</label>
-                                                <input class="desc-form__input" type="text" placeholder="">
-                                                <label class="desc-form__label">Your rating</label>
-                                                <div class="single__score">
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                </div>
-                                                <label class="desc-form__label" >Your review</label>
-                                                <textarea class="desc-form__textarea"   cols="30" rows="10"></textarea>
-                                                <input class="add-tocart__btn add-tocart__btn--small" type="button" value="SUBMIT">
-                                            </form>
+                        <section class="cart">
+                            <table class="cart-table">
+                                <thead class="cart-table__thead">
+                                    <tr class="cart-table__tr">
+                                        <th class="cart-table__th">&nbsp</th>
+                                        <th class="cart-table__th">&nbsp</th>
+                                        <th class="cart-table__th">PRODUCT</th>
+                                        <th class="cart-table__th">PRICE</th>
+                                        <th class="cart-table__th">QUANITY</th>
+                                        <th  class="cart-table__th">TOTAL</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="cart-table__body">
+                                  <tr class="cart-table__tr">
+                                    <td class="cart-table__td">X</td>
+                                    <td class="cart-table__td">
+                                        <a class="cart-table_product" href="single-product.html">
+                                            <img class="cart-table__img" src="./img/poduct-bottom/product-thumb-2.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td class="cart-table__td">
+                                        <a href="shop.html">SAMSUNG
+                                        </a></td>
+                                    <td class="cart-table__td">£15.00</td>
+                                    <td class="cart-table__td">
+                                        <div class="cart-table__quanity quanity">
+                                            <input class="quanity__change" value="-" type="button">
+                                            <input class="quanity__number"  type="number" value="1" min="0"  >
+                                            <input class="quanity__change"  value="+" type="button">
                                         </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
+                                    </td>
+                                    <td class="cart-table__td">£15.00</td>
+                                  </tr>
+                                  <tr>
+                                      <td class="cart-table__actions" colspan="6">
+                                          <div class="coupon">
+                                              <label class="coupon__label">Coupon:
+                                                  <input class="coupon__input" type="text" placeholder="Coupon code">
+                                                  <input class="btn" type="submit" value="APPLY COUPON">
+                                              </label>
+                                          </div>
+                                          <input class="btn" type="submit" value="UPDATE CART">
+                                          <input class="btn" type="submit" value="CHECKOUT">
+                                      </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                         </section>
-                        <section class="latest-products">
-                            <div class="container">
-                                <h1 class="latest-products__title">
-                                    RELATED PRODUCTS
-                                </h1>
-                                <ul class="latest-products__carousel">
-                                    
-                                    <li class="carousel__item">
+                        <section class="cart-bottom">
+                            <div class="interesing">
+                                <h3 class="cart-bottom__title">
+                                    YOU MAY BE INTERESTED IN...
+                                </h3>
+                                <ul class="inresting__list">
+                                   <!-- <li class="carousel__item">
                                         <div class="carousel__wrapper-img">
                                             <div class="carousel__hover hover">
                                                 <button class="hover__button">ADD TO CART</button>
                                                 <a href="#" class="hover__link">SEE DETAILS</a>
                                             </div>
-                                            <img class="carousel__img" src="./img/product/product-1.jpg">
-                                            
-                                        </div>
-                                        
-                                        
-                                        <div class="carousel__name">iPhone 6S</div>
-                                        <div class="carousel__price">
-                                            <div class="carousel__price--new">$1200</div>
-                                            <div class="carousel__price--old">$1350</div>
-                                        </div>
-                                    </li>
-                                    <li class="carousel__item">
-                                        <div class="carousel__wrapper-img">
-                                            <div class="carousel__hover hover">
-                                                <button class="hover__button">ADD TO CART
-                                                    
-                                                </button>
-                                                
-                                                <a href="#" class="hover__link">SEE DETAILS</a>
-                                            </div>
-                                            
                                             <img class="carousel__img" src="./img/product/product-1.jpg">
                                             
                                         </div>
@@ -401,10 +293,45 @@
                                             <div class="carousel__price--new">$1200</div>
                                             <div class="carousel__price--old">$1350</div>
                                         </div>
-                                    </li>
-                                   
+                                    </li>-->
+                                    <div class="single-product">
+                                        <div class="product-f-image">
+                                            <img src="./img/product/product-1.jpg" alt="">
+                                            <div class="product-hover">
+                                                <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <h2><a href="single-product.html">Samsung Galaxy s5- 2015</a></h2>
+                                        
+                                        <div class="product-carousel-price">
+                                            <ins>$700.00</ins> <del>$100.00</del>
+                                        </div> 
+                                        <div class="single-product">
+                                        <div class="product-f-image">
+                                            <img src="./img/product/product-1.jpg" alt="">
+                                            <div class="product-hover">
+                                                <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <h2><a href="single-product.html">Samsung Galaxy s5- 2015</a></h2>
+                                        
+                                        <div class="product-carousel-price">
+                                            <ins>$700.00</ins> <del>$100.00</del>
+                                        </div> 
                                 </ul>
-                                
+
+                            </div>
+                            <div class="totals">
+                                <h3 class="cart-bottom__title">
+                                    CART TOTALS
+                                </h3>
+                                <h3 class="cart-bottom__title">
+                                    CALCULATE SHIPPING
+                                </h3>
                             </div>
                         </section>
                     </div>
