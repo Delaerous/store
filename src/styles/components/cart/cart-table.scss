@@ -3,12 +3,18 @@
     border-right: 1px solid #ddd;
     margin-bottom: 50px;
     width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
     &__td, .cart-table__th, .cart-table__actions{
         border-left: 1px solid #ddd;
         border-top: 1px solid #ddd;
         padding: 15px;
         text-align: center
     }
+    &__th{
+        background:  $headerGray-bg;
+    }
+    
     &__img{
         max-width: 70px;
     }

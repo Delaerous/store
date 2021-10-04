@@ -1,0 +1,19 @@
+.order{
+    margin-bottom: 50px;
+    &-table{
+        width: 100%;
+        border:1px solid $border-gray;
+        border-collapse: collapse;
+        &__td, .order-table__th, .order-table__tr  {
+            border:1px solid $border-gray;
+            text-align: center  ;
+        }
+        &__th{
+            background: $headerGray-bg;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 15px;
+        }
+    }
+    
+}

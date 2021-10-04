@@ -27,7 +27,7 @@
     }
     &--sidebar{
         margin-bottom: 30px;
-        &:nth-last-child(1){
+        &:last-child{
             margin-bottom: 0;
         }
     }

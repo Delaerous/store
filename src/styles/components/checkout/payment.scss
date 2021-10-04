@@ -1,0 +1,25 @@
+.payment{
+    &__list{
+        margin-bottom: 30px;
+    }
+    &__label{
+        font-weight: 700;
+    }
+    &__input{
+        margin-bottom: 10px;
+    }
+    &__text{
+        margin-bottom: 10px;
+    }
+    &__img{
+        vertical-align: middle;
+    }
+    &__link{
+        color:$blue;
+        &:hover{
+            color:green;
+            text-decoration: underline;
+        }
+    }
+    
+}

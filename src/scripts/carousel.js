@@ -15,4 +15,4 @@ $(document).ready(function(){
 		slideMargin: 20,        
 		slideWidth: 236
 	});
-});
+})

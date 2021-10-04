@@ -1,0 +1,17 @@
+.totals-table{
+    border-bottom: 1px solid $border-gray;
+    border-right: 1px solid $border-gray;
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    &__th{
+        background:  $headerGray-bg;
+        border-left: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+    }
+    &__td{
+        border-left: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        padding: 10px;
+    }
+}

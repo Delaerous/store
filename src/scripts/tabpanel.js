@@ -18,7 +18,8 @@ function openDescription() {
     });
   }
 
-  openDescription();
+  
+  
   function openReviews() {
     
     reviews.addEventListener('click', function (e) {
@@ -31,5 +32,10 @@ function openDescription() {
       }
     });
   }
-
-  openReviews();
+  description.addEventListener("click", (e)=>{
+    openDescription();
+  });
+  reviews.addEventListener("click", (e)=>{
+    openReviews();
+  });
+  

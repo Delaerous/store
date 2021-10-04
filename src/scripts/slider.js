@@ -20,6 +20,6 @@ const slyder = $('.slider__list').bxSlider({
     e.preventDefault();
   
     slyder.goToNextSlide();
-  });
+  })
 
  

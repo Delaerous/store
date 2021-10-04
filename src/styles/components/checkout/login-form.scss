@@ -1,0 +1,35 @@
+.login-form{
+    background-color: $headerGray-bg;
+    margin-bottom: 30px;
+    padding: 25px;
+    display: none;
+    &__wrapper{
+        overflow: hidden;
+    }
+    &__text{
+        margin-bottom: 25px;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+    }
+    &__input{
+        padding: 10px;
+        border: 1px solid $border-gray;
+        margin-bottom: 25px;
+    }
+    &__checkbox-wrap{
+        padding: 25px 0 15px;
+    }
+    &__lost-psw{
+        color:$blue;
+        &:hover{
+            color:$green;
+        }
+    }
+}
+
+.coupon-form__wrapper{
+    overflow: hidden;
+}

@@ -22,6 +22,7 @@
     &__price{
         font-family:Arial, Helvetica, sans-serif;
         display: flex;
+        
         &--new{
             color: $blue;
             font-weight: 700;
@@ -30,6 +31,7 @@
         }
         &--old{
             position: relative;
+            width: fit-content;
             &::before{
                 border-bottom: 1px solid black;
                 position: absolute;

@@ -1,0 +1,42 @@
+.shipping{
+    &__form{
+        
+    flex-direction: column;
+    display: none;
+    &-select, .shipping__form-input{
+        padding: 10px;
+        margin-bottom: 20px;
+
+     }
+    }
+    
+}
+.shipping__form-input:last-child{
+    margin-bottom: 0;
+}
+
+.form-open{
+    animation: showBlock 1s ease-in-out;
+    display: flex;
+    &--block{
+      display: block;
+      animation: showBlockUp 1s ease-in-out;
+    }
+}
+@keyframes showBlockUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

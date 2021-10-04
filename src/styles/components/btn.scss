@@ -6,8 +6,12 @@
         background-color: $blue;
         padding: 11px 20px;
         text-transform: uppercase;
+        width: fit-content;
         &--small{
             width: 33%;
+        }
+        &--select{
+            padding: 6px 25px;
         }
         &:hover{
             background-color:black;

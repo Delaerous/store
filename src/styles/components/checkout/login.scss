@@ -1,0 +1,17 @@
+.login{
+    display: flex;
+    background-color: $headerGray-bg;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 15px;
+    &__button{
+        border: none;
+        background-color: transparent;
+        color: $green;
+        text-decoration: underline;
+        &:hover{
+            color: $green;
+            text-decoration: underline;
+        }
+    }
+}

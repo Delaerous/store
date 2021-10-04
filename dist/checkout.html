@@ -101,13 +101,13 @@
                         <a href="shop.html" class="main-menu__link ">SHOP PAGE</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="single-product.html" class="main-menu__link main-menu__link--active">SINGLE PRODUCT</a>
+                        <a href="single-product.html" class="main-menu__link">SINGLE PRODUCT</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="cart.html" class="main-menu__link">CART</a>
+                        <a href="cart.html" class="main-menu__link ">CART</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="checkout.html" class="main-menu__link">CHECKOUT</a>
+                        <a href="checkout.html" class="main-menu__link main-menu__link--active" >CHECKOUT</a>
                     </li>
                     <li class="main-menu__item">
                         <a href="#" class="main-menu__link">CATEGORY</a>
@@ -125,7 +125,7 @@
         <div class="page-title">
             <div class="container">
                 <div class="page-title__wrapper">
-                    <h1 class="page-title__text">Single</h1>
+                    <h1 class="page-title__text">CHECKOUT</h1>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
                                 <h3 class="sidebar__title">SEARCH PRODUCTS</h3>
                                 <form action="#" class="sidebar__form">
                                     <input type="search" class="sidebar__input" placeholder="Search products..." >
-                                    <input class="sidebar__btn" type="button" value="SEARCH">
+                                    <input class="btn btn--small" type="button" value="SEARCH">
                                 </form>
                             </div>
                             <div class="sidebar__item">
@@ -150,7 +150,7 @@
                                             <div class="single__name single__name--sidebar">
                                                 <p>Sony Smart TV - 2015</p>
                                             </div>
-                                            <div class="carousel__price">
+                                            <div class="carousel__price">   
                                                     <div class="carousel__price--new">$400</div>
                                                     <div class="carousel__price--old">$425</div>
                                             </div>
@@ -206,207 +206,168 @@
                         </div>
                     </aside>
                     <div class="main-content">
-                        <section class="single-product">
-                            <div class="breadcrumbs__wrapper">
-                                <ul class="breadcrumbs">
-                                    <li class="breadcrumbs__item">
-                                        <a href="index.html" class="breadcrumbs__link">Home</a>
+                        <div class="login">
+                            <p class="login__text">Returning customer?</p>
+                            <button class="login__button" id="login">Click here to login</button>
+                        </div>
+                        <div class="login-form__wrapper">
+                            <form action="#" class="login-form">
+                                <p class="login-form__text">If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing & Shipping section.</p>
+                                <div class="login-form__body">
+                                    <label> Username or email *</label>
+                                        <input class="login-form__input" type="text">
+                                    <label> Password *</label>
+                                        <input class="login-form__input" type="text">
+                                        <input class="btn btn--small" type="submit" value="LOGIN">
+                                        <div class="login-form__checkbox-wrap">
+                                            <input type="checkbox"> <label for="checkbox"> Remember me</label>
+                                        </div>
+                                        <a class="login-form__lost-psw" href="#">
+                                            Lost your password?
+                                        </a>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="login">
+                            <p class="login__text">Have a coupon?</p>
+                            <button class="login__button" id="coupon">Click here to enter your code</button>
+                        </div>
+                        <div class="coupon-form__wrapper">
+                            <form id="coupon-form" action="#" class="login-form">
+                                <div class="login-form__body">
+                                        <input class="login-form__input" type="text" value="Coupon code">   
+                                        <input class="btn " type="submit" value="APPLY COUPON">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="main-content__bottom">
+                            <section class="form-adress">
+                                <ul class="form-adress__list">
+                                    <li class="form-adress__item">
+                                        <form action="" class="form-adress--left">
+                                            <h3 class="form-adress__title">BILLING DETAILS</h3>
+                                            <label class="form-adress__label" for="country">Country *</label>
+                                            <select name="country" id="country">
+                                                <option value="RU">RUSSIA</option>
+                                                <option value="FR">France</option>
+                                            </select>
+                                            <label class="form-adress__label" for="firstName">First Name *</label>
+                                            <input class="form-adress__input" type="text"  id="firstName">
+                                            <label class="form-adress__label" for="lastName">Last Name *</label>
+                                            <input class="form-adress__input" type="text"  id="lastName">
+                                            <label class="form-adress__label" for="companyName">Company Name</label>
+                                            <input class="form-adress__input" type="text"  id="companyName">
+                                            <label class="form-adress__label" >Address *
+                                            <input class="form-adress__input" type="text"  id="street" placeholder="Street adress">
+                                            <input class="form-adress__input" type="text"  id="street" placeholder="Apartament, suite, unit etc.(optional)">
+                                            </label>
+                                            <label class="form-adress__label" for="town">Town / City *</label>
+                                            <input class="form-adress__input" type="text"  id="town" placeholder="Town / City *">
+                                            <label class="form-adress__label" for="state">County</label>
+                                            <input class="form-adress__input" type="text"  id="state" placeholder="State / County">
+                                            <label class="form-adress__label" for="postcode">Postcode *</label>
+                                            <input class="form-adress__input" type="text"  id="postcode" placeholder="Postcode / Zip">
+                                            <label class="form-adress__label" for="email">Email Address *</label>
+                                            <input class="form-adress__input" type="text"  id="email" >
+                                            <label class="form-adress__label" for="phone">Phone *</label>
+                                            <input class="form-adress__input" type="text"  id="phone" >
+                                            <div class="form-adress__password password">
+                                                <p class="password__text">Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
+                                                <label class="form-adress__label" for="password">Account password *</label>
+                                                <input class="form-adress__input" type="text" id="password">
+                                            </div>
+                                        </form>
                                     </li>
-                                    <li class="breadcrumbs__item">
-                                        <a href="index.html" class="breadcrumbs__link">Category</a>
-                                    </li>
-                                    <li class="breadcrumbs__item">
-                                        <a href="#" class="breadcrumbs__link breadcrumbs__link--active"> Sony Smart TV </a>
+                                    <li class="form-adress__item">
+                                        <form action="" class="form-adress--right">
+                                            
+                                                <h3 class="form-adress__title" ><input class="form-adress__checkbox" type="checkbox" name="a" value="1417"> SHIP TO A DIFFERENT ADDRESS?</h3>       
+                                        
+                                                <label class="form-adress__label" for="country">Country *</label>
+                                                <select name="country" id="country">
+                                                    <option value="RU">RUSSIA</option>
+                                                    <option value="FR">France</option>
+                                                </select>
+                                                <label class="form-adress__label" for="firstName">First Name *</label>
+                                                <input class="form-adress__input" type="text"  id="firstName">
+                                                <label class="form-adress__label" for="lastName">Last Name *</label>
+                                                <input class="form-adress__input" type="text"  id="lastName">
+                                                <label class="form-adress__label" for="companyName">Company Name</label>
+                                                <input class="form-adress__input" type="text"  id="companyName">
+                                                <label class="form-adress__label" >Address *
+                                                <input class="form-adress__input" type="text"  id="street" placeholder="Street adress">
+                                                <input class="form-adress__input" type="text"  id="street" placeholder="Apartament, suite, unit etc.(optional)">
+                                                </label>
+                                                <label class="form-adress__label" for="town">Town / City *</label>
+                                                <input class="form-adress__input" type="text"  id="town" placeholder="Town / City *">
+                                                <label class="form-adress__label" for="state">County</label>
+                                                <input class="form-adress__input" type="text"  id="state" placeholder="State / County">
+                                                <label class="form-adress__label" for="postcode">Postcode *</label>
+                                                <input class="form-adress__input" type="text"  id="postcode" placeholder="Postcode / Zip">
+                                                <label class="form-adress__label" for="email">Order Notes</label>
+                                                <textarea class="form-adress__textarea" type="text"  id="email" ></textarea>
+                                            
+                                        </form>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="single-product__content">
-                                <div class="product-slider__wrapper">
-                                    <div class="product-slider">
-                                        <ul class="product-slider__list">
-                                            <li class="product-slider__item">
-                                                <a href="#" class="single-product__link">
-                                                    <img src="./img/product/product-1.jpg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="product-slider__item">
-                                                <a href="#" class="single-product__link">
-                                                    <img src="./img/product/product-2.jpg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="product-slider__item">
-                                                <a href="#" class="single-product__link">
-                                                    <img src="./img/product/product-3.jpg" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-slider__pager pager">
-                                    <ul>
-                                        <li class="pager__item">
-                                            <a data-slide-index="0">
-                                                <img class="pager__img" src="./img/product/product-1.jpg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="pager__item">
-                                            <a data-slide-index="1">
-                                                <img class="pager__img" src="./img/product/product-2.jpg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="pager__item">
-                                            <a data-slide-index="2">
-                                                <img class="pager__img" src="./img/product/product-3.jpg" alt="">
-                                            </a>
-                                        </li>
-                                    </ul>
+                            </section>
+                            <section class="order" >
+                                <div class="order__title">
+                                    <h3 class="form-adress__title">YOUR ORDER</h3>
+                                    <table class="order-table">
+                                        <thead class="order-table__head">
+                                            <th class="order-table__th">PRODUCT</th>
+                                            <th class="order-table__th">TOTAL</th>
+                                        </thead>
+                                        <tbody class="order-table__body">
+                                            <tr class="order-table__tr">
+                                                <th class="order-table__th">Ship Your Idea × 1
+                                                </th>
+                                                <td class="order-table__td">£15.00</td>
+                                            </tr>
+                                            <tr class="order-table__tr">
+                                                <th class="order-table__th">CART SUBTOTAL
+                                                </th>
+                                                <td class="order-table__td">£15.00</td>
+                                            </tr>
+                                            <tr class="order-table__tr">
+                                                <th class="order-table__th">SHIPPING AND HANDLING
+                                                </th>
+                                                <td class="order-table__td">Free Shipping</td>
+                                            </tr>
+                                            <tr class="order-table__tr">
+                                                <th class="order-table__th">ORDER TOTAL
+                                                </th>
+                                                <td class="order-table__td">£15.00</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
                                 </div>
-                                </div>
-                                <div class="single-product__main device-description">
-                                    <h4 class="device-description__title">Sony Smart TV</h4>
-                                    <div class="carousel__price">
-                                        <div class="carousel__price--new">$1200</div>
-                                        <div class="carousel__price--old">$1350</div>
-                                    </div>
-                                    <form class="add-tocart" action="#">
-                                        <input class="add-tocart__quanity" type="number" id="tentacles" name="tentacles" min="1" max="100">
-                                        <input class="add-tocart__btn" type="button" value="ADD TO CART">
-                                    </form>
-                                    <div class="device-description__category category-name">
-                                        <ul class="category-name__list"> Category:
-                                            <li class="category-name__item">
-                                                <a href="#" class="category-name__link">Summer.</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="category-name__list"> Tags:
-                                            <li class="category-name__item">
-                                                <a href="#" class="category-name__link">awesome,</a>
-                                                <a href="#" class="category-name__link">best,</a>
-                                                <a href="#" class="category-name__link">salle.</a>
-                                            </li>
-                                        </ul>
-    
-                                    </div>
-                                    <div class="device-description__content tabpanel">
-                                        <ul class="tabpanel__list">
-                                            <li class="tabpanel__item">
-                                                <button  class="tabpanel__tab tabpanel__tab--active " id="Description">
-                                                    Description
-                                                </button>
-                                            </li>
-                                            <li class="tabpanel__item">
-                                                <button  class="tabpanel__tab" id="Reviews">
-                                                    Reviews
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <div class="tabpanel__content">
-                                            <div id="description-content" class="tabpanel__description enabled">Product Description
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.
-                                                
-                                                Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</div>
-                                            <form id="reviews-content"  class="tabpanel__form desc-form">
-                                                <h3 class="desc-form__title">
-                                                    Reviews
-                                                </h3>
-                                                <label class="desc-form__label" for="name">Name</label>
-                                                <input class="desc-form__input" type="text" placeholder="">
-                                                <label class="desc-form__label" for="email">Email</label>
-                                                <input class="desc-form__input" type="text" placeholder="">
-                                                <label class="desc-form__label">Your rating</label>
-                                                <div class="single__score">
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                    <svg class="single__score-item">
-                                                        <use xlink:href="./img/svg/sprite.svg#star"></use>
-                                                    </svg>
-                                                </div>
-                                                <label class="desc-form__label" >Your review</label>
-                                                <textarea class="desc-form__textarea"   cols="30" rows="10"></textarea>
-                                                <input class="add-tocart__btn add-tocart__btn--small" type="button" value="SUBMIT">
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </section>
-                        <section class="latest-products">
-                            <div class="container">
-                                <h1 class="latest-products__title">
-                                    RELATED PRODUCTS
-                                </h1>
-                                <ul class="latest-products__carousel">
-                                    
-                                    <li class="carousel__item">
-                                        <div class="carousel__wrapper-img">
-                                            <div class="carousel__hover hover">
-                                                <button class="hover__button">ADD TO CART</button>
-                                                <a href="#" class="hover__link">SEE DETAILS</a>
-                                            </div>
-                                            <img class="carousel__img" src="./img/product/product-1.jpg">
-                                            
-                                        </div>
-                                        
-                                        
-                                        <div class="carousel__name">iPhone 6S</div>
-                                        <div class="carousel__price">
-                                            <div class="carousel__price--new">$1200</div>
-                                            <div class="carousel__price--old">$1350</div>
-                                        </div>
+                            </section>
+                            <section class="payment">
+                                <ul class="payment__list">
+                                    <li class="payment__item">
+                                        <input class="payment__input" type="radio" id="bank" name="payment">
+                                        <label class="payment__label for="bank">Direct Bank Transfer</label>
+                                        <p class="payment__text">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
                                     </li>
-                                    <li class="carousel__item">
-                                        <div class="carousel__wrapper-img">
-                                            <div class="carousel__hover hover">
-                                                <button class="hover__button">ADD TO CART
-                                                    
-                                                </button>
-                                                
-                                                <a href="#" class="hover__link">SEE DETAILS</a>
-                                            </div>
-                                            
-                                            <img class="carousel__img" src="./img/product/product-1.jpg">
-                                            
-                                        </div>
-                                        
-                                        
-                                        <div class="carousel__name">iPhone 6S</div>
-                                        <div class="carousel__price">
-                                            <div class="carousel__price--new">$1200</div>
-                                            <div class="carousel__price--old">$1350</div>
-                                        </div>
+                                    <li class="payment__item">
+                                        <input class="payment__input" type="radio" id="chequePay" name="payment">
+                                        <label class="payment__label for="chequePay">Cheque Payment</label>
                                     </li>
-                                    <li class="carousel__item">
-                                        <div class="carousel__wrapper-img">
-                                            <div class="carousel__hover hover">
-                                                <button class="hover__button">ADD TO CART</button>
-                                                <a href="#" class="hover__link">SEE DETAILS</a>
-                                            </div>
-                                            <img class="carousel__img" src="./img/product/product-1.jpg">
-                                            
-                                        </div>
-                                        
-                                        
-                                        <div class="carousel__name">iPhone 6S</div>
-                                        <div class="carousel__price">
-                                            <div class="carousel__price--new">$1200</div>
-                                            <div class="carousel__price--old">$1350</div>
-                                        </div>
+                                    <li class="payment__item">
+                                        <input class="payment__input" type="radio" id="chequePay" name="payment">
+                                        <label class="payment__label" for="chequePay">Cheque Payment</label>
+                                        <img class="payment__img" src="./img/payPal.png" alt="PayPal">
+                                        <a class="payment__link" href="#">What is PayPal?</a>
                                     </li>
-                                   
                                 </ul>
-                                
-                            </div>
-                        </section>
+                                <div class="btn">PLACE ORDER</div>
+                            </section>
+                        </div>
+                        
                     </div>
                     
                 </div>
