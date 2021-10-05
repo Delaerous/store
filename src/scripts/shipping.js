@@ -1,3 +1,4 @@
+
 const shippingTitle = document.getElementById("shipping");
 const shippingForm = document.getElementById("shipping-form");
 
