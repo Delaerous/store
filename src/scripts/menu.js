@@ -12,9 +12,11 @@ function menuFixed() {
 }
 
 function scrollTop() {
-    menu.addEventListener("click",(event)=>{
+    
         if (menu.classList.contains("sticky-menu")) {
             header.scrollIntoView();
         } 
-    });
+    
 }
+
+menu.addEventListener("click",scrollTop);

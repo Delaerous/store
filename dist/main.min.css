@@ -1573,29 +1573,27 @@ template {
 .catalog {
   padding: 50px; }
 
-[class*=wrapper] {
-  display: none; }
-
-.wrapper-1 {
+.physicianList {
   display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#pagingBox {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
 
-.pagination-numbers {
-  display: flex;
-  justify-content: center; }
+#page_navigation a {
+  padding: 3px 6px;
+  border: 1px solid #2e6da4;
+  margin: 2px;
+  color: black;
+  text-decoration: none; }
 
-.pagination-numbers p {
-  padding: 10px;
-  color: #5a88ca;
-  border: 1px solid #ddd;
-  padding: 6px 12px; }
-  .pagination-numbers p:first-child {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px; }
-  .pagination-numbers p:last-child {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px; }
+.active_page {
+  background: #5a88ca;
+  color: white !important; }
 
 .shopping-item {
   margin-top: 40px;
@@ -1779,6 +1777,8 @@ template {
   padding: 80px 0 130px; }
   .main__wrapper {
     display: flex; }
+    .main__wrapper--shop {
+      flex-direction: column; }
   .main-content {
     width: 67%;
     overflow: hidden; }
