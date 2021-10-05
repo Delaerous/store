@@ -1855,9 +1855,6 @@ template {
 .enabled {
   display: flex; }
 
-.disabled {
-  display: none; }
-
 .single {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
