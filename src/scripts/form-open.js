@@ -10,7 +10,7 @@ function openForm() {
 }
 
 
-if (loginBtn || couponBtn ) {
+if (loginBtn && couponBtn ) {
     loginBtn.addEventListener("click",(event)=>{
         event.target = event.preventDefault();
         loginForm.classList.toggle("form-open--block");

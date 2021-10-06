@@ -85,7 +85,7 @@
                                     <use xlink:href="./img/svg/sprite.svg#cart "></use>
                                 </svg>
                             </div>
-                            <span class="shopping__amount">5</span>
+                            <span id="buyItem" class="shopping__amount"></span>
                         </a>
                     </div>
                 </div>
@@ -232,9 +232,9 @@
                                     <td class="cart-table__td">£15.00</td>
                                     <td class="cart-table__td">
                                         <div class="cart-table__quanity quanity">
-                                            <input class="quanity__change" value="-" type="button">
-                                            <input class="quanity__number"  type="number" value="1" min="0"  >
-                                            <input class="quanity__change"  value="+" type="button">
+                                            <input id="del" class="quanity__change" value="-" type="button">
+                                            <input id="countItem" class="quanity__number"  type="number"  min="0"  >
+                                            <input class="quanity__change"  value="+" type="button" data-buy="addToCart">
                                         </div>
                                     </td>
                                     <td class="cart-table__td">£15.00</td>
@@ -264,7 +264,7 @@
                                             <div class="single-product__img">
                                                 <img src="./img/product/product-1.jpg" alt="">
                                                 <div class="single-product__hover">
-                                                    <a href="#" class="single-product__btn">
+                                                    <a href="#" class="single-product__btn" data-buy="addToCart">
                                                         Add to cart</a>
                                                     <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
                                                 </div>
@@ -281,7 +281,7 @@
                                             <div class="single-product__img">
                                                 <img src="./img/product/product-1.jpg" alt="">
                                                 <div class="single-product__hover">
-                                                    <a href="#" class="single-product__btn">
+                                                    <a href="#" class="single-product__btn" data-buy="addToCart">
                                                         Add to cart</a>
                                                     <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
                                                 </div>
@@ -456,6 +456,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="main.min.js"></script>
 </body>
 

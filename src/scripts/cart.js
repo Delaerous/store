@@ -1,19 +1,41 @@
-var clicks = localStorage.getItem('clicks') || 0;
-    document.addEventListener("DOMContentLoaded", function(){ document.getElementById("clicks").innerHTML = localStorage.getItem('clicks') || 0; });
+let buyItem = localStorage.getItem('buyItem') || 0;
+    document.addEventListener("DOMContentLoaded", function()
+    { document.getElementById("buyItem").innerHTML = localStorage.getItem('buyItem') || 0 ; });
     function onClick() {
-      clicks = +clicks + 1;
-      document.getElementById("clicks").innerHTML = clicks;
-      updateStorage(clicks);
-    };
-
-    function onReset() {
-      if (confirm('Вы уверенны? Данные обнулятся!')) {
-        clicks = 0;
-        document.getElementById("clicks").innerHTML = clicks;
-        updateStorage(clicks);
+      buyItem = +buyItem + 1;
+      document.getElementById("buyItem").innerHTML = buyItem;
+      updateStorage(buyItem);
+    }
+    function delProduct() {
+      if (buyItem > 0) {
+        buyItem = +buyItem - 1;
+        document.getElementById("buyItem").innerHTML = buyItem;
+        updateStorage(buyItem);
       }
+        
     }
 
-    function updateStorage(clicks) {
-      localStorage.setItem('clicks', clicks);
+
+
+    function updateStorage(buyItem) {
+      localStorage.setItem('buyItem', buyItem);
+    }
+
+    if (document.querySelectorAll('[data-buy]')) {
+      const clickToBuy = document.querySelectorAll('[data-buy]');
+    clickToBuy.forEach(btn => 
+        btn.addEventListener('click', event=> {
+            onClick();
+        }
+    
+    ));
+    }
+
+    
+      
+    const del = document.getElementById("del");
+    if (del) {
+      del.addEventListener("click", ()=>{
+        delProduct();
+    });
     }
