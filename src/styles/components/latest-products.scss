@@ -11,6 +11,16 @@
 
 }
 .carousel{
+    &__prev, &__next{
+        font-size: 14px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding:1px 10px;
+        background:#fa8072;
+        color: white;
+        margin-right: 15px;
+        width: 100%;
+    }
+    
     
     &__name{
         font-family:Arial, Helvetica, sans-serif;
@@ -45,8 +55,8 @@
 
 .bx-controls-direction {
     position: absolute;
-    right: 17px;
-    top: -34px;
+    right: -15px;
+    top: -53px;
 }
 
 .bx-wrapper{
@@ -54,19 +64,16 @@
 }
 .bx{
     &-prev{
-        font-size: 14px;
-        font-family:Arial, Helvetica, sans-serif;
-        padding:1px 10px;
-        background:#fa8072;
-        color: white;
-        margin-right: 15px;
+        margin-right: 10px;
     }
-    &-next{
+    
+    &-next, &-prev{
         font-size: 14px;
         font-family:Arial, Helvetica, sans-serif;
-        padding:1px 10px;
+        padding:3px 17px;
         background:#fa8072;
         color: white;
+        width: 100%;
     }
 }
 
@@ -84,12 +91,12 @@
     
         background: none repeat scroll 0 0 #000;
         content: "";
-        height: 77%;
+        height: 80%;
         left: 0px;
         opacity: 0.6;
         position: absolute;
         top: 0;
-        width: 93%;
+        width: 100%;
         transition-duration: 1s;
         transform: translateY(-150%);
         transition: all 1s;
@@ -162,4 +169,11 @@
     }
    
     
+}
+
+.owl-nav{
+    position: absolute;
+    margin-top: 0;
+    right: -3px;
+    top: -54px;
 }
