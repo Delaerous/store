@@ -1,49 +1,55 @@
 .latest-products{
-    padding-bottom: 50px;
-    padding-top: 20px;
+    padding-bottom: rem(50px);
+    padding-top: rem(20px);
+
+    &__carousel{
+        display: flex;
+    }
     &__title{
         font-family: "Raleway",sans-serif;
-        font-size: 50px;
+        font-size: rem(50px);
         font-weight: 100;
-        margin-bottom: 50px;
+        margin-bottom: rem(50px);
         text-align: center;
     }
 
 }
 .carousel{
     &__prev, &__next{
-        font-size: 14px;
+        font-size: rem(14px);
         font-family:Arial, Helvetica, sans-serif;
-        padding:1px 10px;
+        padding:rem(1px) rem(10px);
         background:#fa8072;
         color: white;
-        margin-right: 15px;
+        margin-right: rem(15px);
         width: 100%;
     }
     
     
     &__name{
         font-family:Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        line-height: 25px;
-        margin-bottom: 10px;
-        margin-top: 15px;
+        font-size: rem(18px);
+        line-height: rem(25px);
+        margin-bottom: rem(10px);
+        margin-top: rem(15px);
+        text-align: center;
     }
     &__price{
         font-family:Arial, Helvetica, sans-serif;
         display: flex;
+        justify-content: center;
         
         &--new{
             color: $blue;
             font-weight: 700;
-            margin-right: 10px;
+            margin-right: rem(10px);
             text-decoration: none;
         }
         &--old{
             position: relative;
             width: fit-content;
             &::before{
-                border-bottom: 1px solid black;
+                border-bottom: rem(1px) solid black;
                 position: absolute;
                 content: "";
                 width: 100%;
@@ -55,8 +61,8 @@
 
 .bx-controls-direction {
     position: absolute;
-    right: -15px;
-    top: -53px;
+    right: rem(-15px);
+    top: rem(-53px);
 }
 
 .bx-wrapper{
@@ -64,13 +70,13 @@
 }
 .bx{
     &-prev{
-        margin-right: 10px;
+        margin-right: rem(10px);
     }
     
     &-next, &-prev{
-        font-size: 14px;
+        font-size: rem(14px);
         font-family:Arial, Helvetica, sans-serif;
-        padding:3px 17px;
+        padding:rem(3px) rem(17px);
         background:#fa8072;
         color: white;
         width: 100%;
@@ -82,8 +88,16 @@
     transition: all 1s ease-out;
     transform: translateY(70%);
     display: flex;
-   
+    margin: 0 auto;
+
+}
+.carousel__wrapper-img:hover  .hover--mini{
+    @include tablets{
+        transform: translateY(35%);
+    }
     
+    
+
 }
 
 
@@ -91,8 +105,8 @@
     
         background: none repeat scroll 0 0 #000;
         content: "";
-        height: 80%;
-        left: 0px;
+        height: 100%;
+        left: rem(0px);
         opacity: 0.6;
         position: absolute;
         top: 0;
@@ -122,7 +136,8 @@
     position: absolute;
     flex-direction: column;
     width: 80%;
-    left: 6%;
+    left: 0;
+    right: 0;
     color: white;
     z-index: 99;
     transition: .4s;
@@ -132,13 +147,13 @@
     
     &__button{
         color: white;
-        margin-bottom: 15px;
+        margin-bottom: rem(15px);
         background-color:$blue;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
+        padding: rem(10px);
+        border-radius: rem(5px);
+        font-size: rem(16px);
         text-transform: uppercase;
-        border: 1px solid $blue;
+        border: rem(1px) solid $blue;
         
         transition: all 1s ease-in-out;
        
@@ -149,15 +164,16 @@
             background-color:black;
             border-color: #444;
             
+            
         }
     }
     &__link{
-        padding: 10px;
+        padding: rem(10px);
         background-color:$blue;
         text-transform: uppercase;
-        border: 1px solid $blue;
-        border-radius: 5px;
-        font-size: 16px;
+        border: rem(1px) solid $blue;
+        border-radius: rem(5px);
+        font-size: rem(16px);
         transition: all 1s ease-out;
         
         &:hover{
@@ -174,6 +190,6 @@
 .owl-nav{
     position: absolute;
     margin-top: 0;
-    right: -3px;
-    top: -54px;
+    right: rem(-3px);
+    top: rem(-54px);
 }

@@ -1,14 +1,21 @@
 .shopping-item{
-    margin-top: 40px;
-    font-size: 18px;
+    margin-top: rem(40px);
+    font-size: rem(18px);
     position: relative;
+    @include mobile{
+        width: 100%;
+        padding-bottom: rem(12px);
+    }
 }
 .shopping{
     &__link{
         display: flex;
-        padding: 10px;
-        border: 1px solid $border-gray;
+        padding: rem(10px);
+        border: rem(1px) solid $border-gray;
         transition: all 1s ease-in-out;
+        @include mobile{
+            justify-content: center;
+        }
         &:hover{
             color:white;
             background-color: $blue;
@@ -20,22 +27,22 @@
     }
     &__amount{
         position: absolute;
-        right: -4px;
-        top: -9px;
+        right: rem(-4px);
+        top: rem(-9px);
         background-color: $blue;
         border-radius: 50%;
         color: white;
-        width: 20px;
-        height: 20px;
-        padding-top: 4px;
-        font-size: 10px;
+        width: rem(20px);
+        height: rem(20px);
+        padding-top: rem(4px);
+        font-size: rem(10px);
         text-align: center;
     }
     &__cart{
         &-icon{
-            max-height: 25px;
-            max-width: 23px;
-            padding-left: 5px;
+            max-height: rem(25px);
+            max-width: rem(23px);
+            padding-left: rem(5px);
         }
     }
 }

@@ -1,5 +1,8 @@
 .brands{
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 60px 0 20px;
+    border-top: rem(1px) solid #e5e5e5;
+    border-bottom: rem(1px) solid #e5e5e5;
+    padding: rem(60px) 0 rem(20px);
+    &__carousel{
+        position: relative;
+    }
 }

@@ -1,0 +1,41 @@
+.burger {
+    display: none;
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: rem(50px);
+      height: rem(30px);
+      position: relative;
+      cursor: pointer;
+      
+    }
+   
+    
+  }
+  .activebrgr{
+    margin-bottom: rem(20px);
+  }
+  .burger .dash {
+    width: 50px;
+    height: 5px;
+    background:$black;
+    border-radius: 20px;
+    transition: 0.25s;
+  }
+  .burger .dash:nth-of-type(3) {
+    position: absolute;
+    top: 0.8rem;
+  }
+  .activebrgr .dash:nth-of-type(1) {
+    opacity: 0;
+  }
+  .activebrgr .dash:nth-of-type(4) {
+    opacity: 0;
+  }
+  .activebrgr .dash:nth-of-type(3) {
+    transform: rotate(45deg);
+  }
+  .activebrgr .dash:nth-of-type(2) {
+    transform: rotate(-45deg);
+  }

@@ -2,39 +2,45 @@
     display: flex ;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
+    &__box{
+      max-width: $containerWidth;
+    }
     
     &__text{
         position: absolute;
-        right: 282px;
-        top: 110px;
+        right: rem(120px);
+        top: rem(110px);
+        @include tablets {
+          display: none;
+        }
     }
     &__title{
-        font-size: 30px;
+        font-size: rem(30px);
         &--green{
             color:#1bd172;
               }
     }
     &__description{
-        margin-top: 5px;
-        font-size: 18px;
+        margin-top: rem(5px);
+        font-size: rem(18px);
     }
     &__button{
       position: relative;
-        border: 1px solid #eaeaea;
-        padding: 1px;
-        min-height: 34px;
+        border: rem(1px) solid #eaeaea;
+        padding: rem(1px);
+        min-height: rem(34px);
         background: #fff;
         display: inline-block;
         width: auto;
-        line-height: 30px;
-        padding-left: 40px;
-        padding-right: 20px;
+        line-height: rem(30px);
+        padding-left: rem(40px);
+        padding-right: rem(20px);
         margin: 0;
         color: #666666;
-        border-radius: 17px;
+        border-radius: rem(17px);
         transition: all 1s ease;
-        margin-top: 10px;
-        font-size: 14px;
+        margin-top: rem(10px);
+        font-size: rem(14px);
        
         &:hover .slider__link-icon{
           transform: translateX(390%);
@@ -52,8 +58,8 @@
       display: inline-block;
        &-icon{
         transition: all 1s ease-in-out;
-         max-height: 30px;
-         max-width:25px ;
+         max-height: rem(32px);
+         max-width:rem(25px) ;
          vertical-align: middle;
          background-color:$blue;
          border-radius: 50%;
@@ -70,32 +76,42 @@
 
   .arrow-left,
   .arrow-right{
-    width: 32px;
-    height: 32px;
-    border: 1px solid #eaeaea;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    font-size: 30px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    transition: all 0.45s ease;
-    line-height: 29px;
-    overflow: hidden;
-    fill: $blue;
-    &:hover{
-      background: $blue;
-      color: #fff;
-      border-color: $blue;
+    z-index: 1;
+    &__icon{
+      width: rem(32px);
+      height: rem(32px);
+      border: rem(1px) solid #eaeaea;
+      text-align: center;
+      display: block;
+      border-radius: 50%;
+      font-size: rem(30px);
+      position: absolute;
+      transform: translateY(-50%);
+      transition: all 0.45s ease;
+      line-height: rem(29px);
+      overflow: hidden;
+      fill: $blue;
+      
+      &:hover{
+        background: $blue;
+        color: #fff;
+        border-color: $blue;
+      }
     }
+    
   }
   
   .arrow-left {
     transform: rotate(180deg);
-    left: 0;
+    left: 5%;
     position: absolute;
-    top: 46%; 
+    top: 46%;
+    
+    @include tablets{
+      left: rem(24px);
+    } 
   
    
   
@@ -104,39 +120,30 @@
   .arrow-right {
     
     position: absolute;
-    right: 13%;
-    
-   
+    right: 5%;
   }
   .slider__box{
     position: relative;
-    &:hover{
-      .arrow-left{
-        left: 7%;
-        
-      }
-      .arrow-right{
-        right: 16%;
-      }
-  }
+   
+  
   }
   .slider .bx-pager {
     text-align: center;
-    padding: 20px 0;
+    padding: rem(20px) 0;
   }
   .slider .bx-pager-item {
     display: inline-block;
-    margin: 0 4px;
+    margin: 0 rem(4px);
   }
   .slider .bx-pager-item a {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     background: #fff;
     border-radius: 50%;
-    border: 1px solid #999;
+    border: rem(1px) solid #999;
     overflow: hidden;
-    text-indent: 999px;    
+    text-indent: rem(999px);    
     background:#999;
   }
   .slider .bx-pager-item a.active {

@@ -1,0 +1,16 @@
+.owl-stage-outer{
+    overflow: hidden;
+}
+.owl-stage{
+    display: flex;
+}
+
+
+.owl-prev, .owl-next{
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    margin: rem(5px);
+}

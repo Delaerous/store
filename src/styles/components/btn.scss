@@ -1,17 +1,17 @@
 .btn{
         color:white;
         border: none;
-        padding: 7px 20px;
         text-transform: uppercase;
         background-color: $blue;
-        padding: 11px 20px;
+        padding: rem(11px) rem(20px);
         text-transform: uppercase;
         width: fit-content;
-        &--small{
-            width: 33%;
-        }
+        
         &--select{
-            padding: 6px 25px;
+            padding: rem(6px) rem(25px);
+        }
+        &--mtop25{
+            margin-top: 25px;
         }
         &:hover{
             background-color:black;

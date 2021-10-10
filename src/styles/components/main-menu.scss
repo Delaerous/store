@@ -1,12 +1,17 @@
 .main-menu{
     color:$main-menu;
-    background-color:$headerGray-bg;
+    background-color:$main-menu-bg;
+    font-size: rem(15px);
     &__list{
         display: flex;
+        @include mobile{
+            display: none;
+
+        }
         
     }
     &__link{
-        padding: 19px 21px;
+        padding: rem(19px) rem(21px);
         display: block;
         &:hover{    
             background-color:$blue;
@@ -15,6 +20,17 @@
         &--active{
             background-color:$blue;
             color: white;
+        }
+        @include tablets{
+            padding: rem(10px) rem(10px);
+        }
+    }
+    &__wrap{
+        @include mobile{
+            display: flex;
+            align-items:center;
+            padding: rem(15px) 0;
+            flex-direction: column;
         }
     }
     
@@ -26,4 +42,10 @@
     z-index: 100;
     width: 100%;
     transition: 0.4s;
+}
+
+.menu-open{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

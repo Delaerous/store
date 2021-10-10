@@ -1,23 +1,38 @@
 .our-products{
+    @include mobile-mini{
+        display: none;
+    }
     &__list{
         display: grid;
-        grid-gap: 10px;
+        grid-gap: rem(10px);
         grid-template-columns: 1fr 1fr 1fr;
+        @include mobile{
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+    &__item{
+        @include mobile{
+            &:nth-last-of-type(-n+2) {
+                display: none;
+            }
+        }
+        
     }
     &__header{
         position: relative;
     }
     &__title{
-        margin-right: 25px;
+        margin-right: rem(25px);
         font-family: raleway;
-        font-size: 30px;
+        font-size: rem(30px);
         font-weight: 100;
-        margin-bottom: 40px;
+        margin-bottom: rem(40px);
         &--footer{
             
             
             color:white;
-            margin-bottom: 15px;
+            margin-bottom: rem(15px);
             
         }
         &--blue{
@@ -29,10 +44,15 @@
     }
     &__link{
         position: absolute;
-        top: 9px;
-        right: 15px;
+        top: rem(9px);
+        right: rem(5px);
         background: $blue;
         color: #fff;
-        padding: 3px 15px;
+        padding: rem(3px) rem(15px);
+    }
+    &__content{
+        @include mobile{
+            display: flex;
+        }
     }
 }

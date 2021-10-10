@@ -1,6 +1,27 @@
 .single-product{
-   
+   overflow: hidden;
+   position: relative;
+   &--mr50{
+       margin-right: rem(50px);
+       margin-bottom: rem(25px);
+       @include tablets{
+           margin-right: rem(41px);
+           &:nth-child(3n){
+            margin-right: 0;
+        }
+       }
+       &:nth-child(4n){
+           margin-right: 0;
+       }
+       @include mobile-mini{
+           margin-right: 0;
+       }
+   }
     &__content{
         display: flex;
+        @include mobile-mini{
+            flex-direction: column;
+            align-items:center
+        }
     }
 }

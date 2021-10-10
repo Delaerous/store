@@ -4,8 +4,8 @@
     flex-direction: column;
     display: none;
     &-select, .shipping__form-input{
-        padding: 10px;
-        margin-bottom: 20px;
+        padding: rem(10px);
+        margin-bottom: rem(20px);
 
      }
     }

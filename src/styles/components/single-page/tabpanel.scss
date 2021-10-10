@@ -2,13 +2,13 @@
     &__list{
         display: flex;
         justify-content: center;
-        border-bottom: 1px solid $border-gray;
-        margin: 0 0 30px;
+        border-bottom: rem(1px) solid $border-gray;
+        margin: 0 0 rem(30px);
     }
     &__tab{
         display: block;
-        font-size: 16px;
-        padding: 10px 30px;
+        font-size: rem(16px);
+        padding: rem(10px) rem(30px);
         color:$black;
         background: none;
         border: none;

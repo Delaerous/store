@@ -1,22 +1,39 @@
 .cart-table{
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    margin-bottom: 50px;
+    border-bottom: rem(1px) solid #ddd;
+    border-right: rem(1px) solid #ddd;
+    margin-bottom: rem(50px);
     width: 100%;
-    border-spacing: 0px;
+    border-spacing: 0;
     border-collapse: collapse;
     &__td, .cart-table__th, .cart-table__actions{
-        border-left: 1px solid #ddd;
-        border-top: 1px solid #ddd;
-        padding: 15px;
-        text-align: center
+        border-left: rem(1px) solid #ddd;
+        border-top: rem(1px) solid #ddd;
+        padding: rem(15px);
+        text-align: center;
+        @include mobile-mini {
+            font-size: 8px;
+
+        }        
     }
     &__th{
         background:  $headerGray-bg;
     }
     
     &__img{
-        max-width: 70px;
+        max-width: rem(70px);
+        @include mobile-mini {
+            max-width: 4rem;
+            
+        }   
+    }
+    &__quanity{
+        @include mobile{
+            display: flex;
+        }
+        @include mobile-mini{
+            flex-direction: column;
+            align-items:center;
+        }
     }
     
 }

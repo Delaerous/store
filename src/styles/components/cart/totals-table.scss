@@ -1,17 +1,17 @@
 .totals-table{
-    border-bottom: 1px solid $border-gray;
-    border-right: 1px solid $border-gray;
+    border-bottom: rem(1px) solid $border-gray;
+    border-right: rem(1px) solid $border-gray;
     width: 100%;
-    border-spacing: 0px;
+    border-spacing: rem(0px);
     border-collapse: collapse;
     &__th{
         background:  $headerGray-bg;
-        border-left: 1px solid #ddd;
-        border-top: 1px solid #ddd;
+        border-left: rem(1px) solid #ddd;
+        border-top: rem(1px) solid #ddd;
     }
     &__td{
-        border-left: 1px solid #ddd;
-        border-top: 1px solid #ddd;
-        padding: 10px;
+        border-left: rem(1px) solid #ddd;
+        border-top: rem(1px) solid #ddd;
+        padding: rem(10px);
     }
 }
