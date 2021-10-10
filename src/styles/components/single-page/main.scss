@@ -1,5 +1,5 @@
 .main{
-    padding: 80px 0 130px;
+    padding: rem(80px) 0 rem(130px);
     &__wrapper{
         display: flex;
         &--shop{
@@ -10,5 +10,8 @@
     &-content{
         width: 67%;
         overflow: hidden;
+        @include mobile {
+            width: 100%;
+        }
     }
 }

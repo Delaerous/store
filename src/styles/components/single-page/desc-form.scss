@@ -1,22 +1,22 @@
 .desc-form{
     flex-direction: column;
     &__title{
-        font-size: 20px;
-        margin-bottom: 15px
+        font-size: rem(20px);
+        margin-bottom: rem(15px)
     }
     &__label{
-        margin-bottom: 5px;
+        margin-bottom:rem(5px);
         font-weight: 700;
     
     }
     &__input{
-        margin-bottom: 20px;
-        padding: 10px;
-        border: 1px solid $border-gray;
+        margin-bottom: rem(20px);
+        padding: rem(10px);
+        border: rem(1px) solid $border-gray;
     }
     &__textarea{
         resize: none;
-        border: 1px solid $border-gray;
-        margin-bottom: 30px;
+        border: rem(1px) solid $border-gray;
+        margin-bottom: rem(30px);
     }
 }

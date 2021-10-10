@@ -70,7 +70,9 @@
         <div class="container">
             <div class="brand-area__row">
                 <div class="brand-area__row brand-area__row--left">
-                    <img src="./img/brandArea/logo.png" alt="Ustora" class="brand-area__logo">
+                    <a href="index.html" class="brand-area__link">
+                        <img src="./img/brandArea/logo.png" alt="Ustora" class="brand-area__logo">
+                    </a>
                 </div>
                 <div class="brand-area__row brand-area__row--right "></div>
                 <div class="shopping-item shopping">
@@ -89,32 +91,41 @@
     </div>
     <nav class="main-menu" id="main-menu">
         <div class="container">
-            <ul class="main-menu__list">
-                <li class="main-menu__item">
-                    <a href="index.html" class="main-menu__link ">HOME</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="shop.html" class="main-menu__link main-menu__link--active">SHOP PAGE</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="single-product.html" class="main-menu__link">SINGLE PRODUCT</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="cart.html" class="main-menu__link">CART</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="checkout.html" class="main-menu__link">CHECKOUT</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">CATEGORY</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">OTHERS</a>
-                </li>
-                <li class="main-menu__item">
-                    <a href="#" class="main-menu__link">CONTACT</a>
-                </li>
-            </ul>
+            <div class="main-menu__wrap">
+                <div class="burger">
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                </div>
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a href="index.html" class="main-menu__link main-menu__link--active">HOME</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="shop.html" class="main-menu__link">SHOP PAGE</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="single-product.html" class="main-menu__link">SINGLE PRODUCT</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="cart.html" class="main-menu__link">CART</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="checkout.html" class="main-menu__link">CHECKOUT</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">CATEGORY</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">OTHERS</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">CONTACT</a>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
         
     </nav>
@@ -132,670 +143,495 @@
                     <input type='hidden' id='current_page' />
                     <input type='hidden' id='show_per_page' />
                     <ul id="pagingBox">
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                        <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-2.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-2.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-2.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="single-product single-product--mr50">
-                                <div class="single-product__img">
-                                    <img src="./img/product/product-1.jpg" alt="">
-                                    <div class="single-product__hover">
-                                        <a href="#" class="single-product__btn">
-                                            Add to cart</a>
-                                        <a href="single-product.html" class="single-product__link"><i class="fa fa-link"></i> See details</a>
-                                    </div>
+                         <li class="single-product single-product--mr50">
+                            <div class="carousel__wrapper-img">
+                                <div class="carousel__hover hover">
+                                    <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                    <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                 </div>
-                                <h2>
-                                    <a class="single-product__title" href="single-product.html">Samsung Galaxy</a>
-                                </h2>
-                                <div class="single-product__price">    
-                                    £15.00
-                                </div>
-                                <button class="btn btn--select">Select options</button>
-                            </div> 
+                                <img class="carousel__img" src="./img/product/product-1.jpg">
+                            </div>
+                            <div class="carousel__name">iPhone 6S</div>
+                            <div class="carousel__price">
+                                <div class="carousel__price--new">$1200</div>
+                                <div class="carousel__price--old">$1350</div>
+                            </div>
                         </li>
                     </ul>
                     <div id='page_navigation'>

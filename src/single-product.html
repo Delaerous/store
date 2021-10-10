@@ -74,7 +74,9 @@
             <div class="container">
                 <div class="brand-area__row">
                     <div class="brand-area__row brand-area__row--left">
+                        <a href="index.html" class="brand-area__link">
                         <img src="./img/brandArea/logo.png" alt="Ustora" class="brand-area__logo">
+                    </a>
                     </div>
                     <div class="brand-area__row brand-area__row--right "></div>
                     <div class="shopping-item shopping">
@@ -93,32 +95,41 @@
         </div>
         <nav class="main-menu" id="main-menu">
             <div class="container">
-                <ul class="main-menu__list">
-                    <li class="main-menu__item">
-                        <a href="index.html" class="main-menu__link ">HOME</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="shop.html" class="main-menu__link ">SHOP PAGE</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="single-product.html" class="main-menu__link main-menu__link--active">SINGLE PRODUCT</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="cart.html" class="main-menu__link">CART</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="checkout.html" class="main-menu__link">CHECKOUT</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="#" class="main-menu__link">CATEGORY</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="#" class="main-menu__link">OTHERS</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="#" class="main-menu__link">CONTACT</a>
-                    </li>
-                </ul>
+                <div class="main-menu__wrap">
+                    <div class="burger">
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                    </div>
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="index.html" class="main-menu__link main-menu__link--active">HOME</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="shop.html" class="main-menu__link">SHOP PAGE</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="single-product.html" class="main-menu__link">SINGLE PRODUCT</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="cart.html" class="main-menu__link">CART</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="checkout.html" class="main-menu__link">CHECKOUT</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">CATEGORY</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">OTHERS</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">CONTACT</a>
+                        </li>
+                    </ul>
+                    
+                </div>
             </div>
             
         </nav>
@@ -138,47 +149,53 @@
                                 <h3 class="sidebar__title">SEARCH PRODUCTS</h3>
                                 <form action="#" class="sidebar__form">
                                     <input type="search" class="sidebar__input" placeholder="Search products..." >
-                                    <input class="btn btn--small" type="button" value="SEARCH">
+                                    <input class="btn" type="button" value="SEARCH">
                                 </form>
                             </div>
                             <div class="sidebar__item">
                                 <h3 class="sidebar__title single-item">PRODUCT</h3>
                                 <ul class="single-item__list">
                                     <li class="our-products__single single single--sidebar">
-                                        <img class="single__img single__img--sidebar" src="./img/poduct-bottom/product-thumb-1.jpg" alt="">
-                                        <div class="single__content">
-                                            <div class="single__name single__name--sidebar">
-                                                <p>Sony Smart TV - 2015</p>
+                                        <a href="single-product.html" class="sidebar__link">
+                                            <img class="single__img single__img--sidebar" src="./img/poduct-bottom/product-thumb-1.jpg" alt="">
+                                            <div class="single__content">
+                                                <div class="single__name single__name--sidebar">
+                                                    <p>Sony Smart TV - 2015</p>
+                                                </div>
+                                                <div class="carousel__price">   
+                                                        <div class="carousel__price--new">$400</div>
+                                                        <div class="carousel__price--old">$425</div>
+                                                </div>
                                             </div>
-                                            <div class="carousel__price">
-                                                    <div class="carousel__price--new">$400</div>
-                                                    <div class="carousel__price--old">$425</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="our-products__single single">
-                                        <img class="single__img single__img--sidebar" src="./img/poduct-bottom/product-thumb-1.jpg" alt="">
-                                        <div class="single__content">
-                                            <div class="single__name single__name--sidebar">
-                                                <p>Sony Smart TV - 2015</p>
-                                            </div>
-                                            <div class="carousel__price">
-                                                    <div class="carousel__price--new">$400</div>
-                                                    <div class="carousel__price--old">$425</div>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </li>
                                     <li class="our-products__single single single--sidebar">
-                                        <img class="single__img single__img--sidebar" src="./img/poduct-bottom/product-thumb-1.jpg" alt="">
-                                        <div class="single__content">
-                                            <div class="single__name single__name--sidebar">
-                                                <p>Sony Smart TV - 2015</p>
+                                        <a href="single-product.html" class="sidebar__link">
+                                            <img class="single__img single__img--sidebar" src="./img/poduct-bottom/product-thumb-1.jpg" alt="">
+                                            <div class="single__content">
+                                                <div class="single__name single__name--sidebar">
+                                                    <p>Sony Smart TV - 2015</p>
+                                                </div>
+                                                <div class="carousel__price">   
+                                                        <div class="carousel__price--new">$400</div>
+                                                        <div class="carousel__price--old">$425</div>
+                                                </div>
                                             </div>
-                                            <div class="carousel__price">
-                                                    <div class="carousel__price--new">$400</div>
-                                                    <div class="carousel__price--old">$425</div>
+                                        </a>
+                                    </li>
+                                    <li class="our-products__single single single--sidebar">
+                                        <a href="single-product.html" class="sidebar__link">
+                                            <img class="single__img single__img--sidebar" src="./img/poduct-bottom/product-thumb-1.jpg" alt="">
+                                            <div class="single__content">
+                                                <div class="single__name single__name--sidebar">
+                                                    <p>Sony Smart TV - 2015</p>
+                                                </div>
+                                                <div class="carousel__price">   
+                                                        <div class="carousel__price--new">$400</div>
+                                                        <div class="carousel__price--old">$425</div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -186,19 +203,19 @@
                                 <h3 class="sidebar__title">RECENT POSTS</h3>
                                 <ul class="recent__list">
                                     <li class="recent__item">
-                                        <a href="#" class="recent__link">Sony SmartTV</a>
+                                         <a href="single-product.html" class="recent__link">Sony SmartTV</a>
                                     </li>
                                     <li class="recent__item">
-                                        <a href="#" class="recent__link">Sony SmartTV</a>
+                                         <a href="single-product.html" class="recent__link">Sony SmartTV</a>
                                     </li>
                                     <li class="recent__item">
-                                        <a href="#" class="recent__link">Sony SmartTV</a>
+                                         <a href="single-product.html" class="recent__link">Sony SmartTV</a>
                                     </li>
                                     <li class="recent__item">
-                                        <a href="#" class="recent__link">Sony SmartTV</a>
+                                         <a href="single-product.html" class="recent__link">Sony SmartTV</a>
                                     </li>
                                     <li class="recent__item">
-                                        <a href="#" class="recent__link">Sony SmartTV</a>
+                                         <a href="single-product.html" class="recent__link">Sony SmartTV</a>
                                     </li>
                                     
                                 </ul>
@@ -313,7 +330,7 @@
                                                 <label class="desc-form__label" for="email">Email</label>
                                                 <input class="desc-form__input" type="text" placeholder="">
                                                 <label class="desc-form__label">Your rating</label>
-                                                <div class="single__score">
+                                                <div class="single__score single__score--visible">
                                                     <svg class="single__score-item">
                                                         <use xlink:href="./img/svg/sprite.svg#star"></use>
                                                     </svg>
@@ -332,7 +349,7 @@
                                                 </div>
                                                 <label class="desc-form__label" >Your review</label>
                                                 <textarea class="desc-form__textarea"   cols="30" rows="10"></textarea>
-                                                <input class="add-tocart__btn add-tocart__btn--small" type="button" value="SUBMIT">
+                                                <input class="btn " type="button" value="SUBMIT">
                                             </form>
                                         </div>
                                     </div>
@@ -347,55 +364,42 @@
                                 </h1>
                                 <ul class="latest-products__carousel">
                                     
-                                    <li class="carousel__item">
+                                    <li class="single-product single-product--mr50">
                                         <div class="carousel__wrapper-img">
-                                            <div class="carousel__hover hover">
-                                                <button class="hover__button" data-buy="addToCart">ADD TO CART</button>
-                                                <a href="#" class="hover__link">SEE DETAILS</a>
+                                            <div class="carousel__hover hover hover--mini">
+                                                <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                                <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                             </div>
                                             <img class="carousel__img" src="./img/product/product-1.jpg">
-                                            
                                         </div>
-                                        
-                                        
                                         <div class="carousel__name">iPhone 6S</div>
                                         <div class="carousel__price">
                                             <div class="carousel__price--new">$1200</div>
                                             <div class="carousel__price--old">$1350</div>
                                         </div>
                                     </li>
-                                    <li class="carousel__item">
+                                    <li class="single-product single-product--mr50">
                                         <div class="carousel__wrapper-img">
-                                            <div class="carousel__hover hover">
-                                                <button class="hover__button" data-buy="addToCart">ADD TO CART
-                                                    
-                                                </button>
-                                                
-                                                <a href="#" class="hover__link">SEE DETAILS</a>
+                                            <div class="carousel__hover hover hover--mini">
+                                                <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                                <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                             </div>
-                                            
                                             <img class="carousel__img" src="./img/product/product-1.jpg">
-                                            
                                         </div>
-                                        
-                                        
                                         <div class="carousel__name">iPhone 6S</div>
                                         <div class="carousel__price">
                                             <div class="carousel__price--new">$1200</div>
                                             <div class="carousel__price--old">$1350</div>
                                         </div>
                                     </li>
-                                    <li class="carousel__item">
+                                    <li class="single-product single-product--mr50">
                                         <div class="carousel__wrapper-img">
-                                            <div class="carousel__hover hover">
-                                                <button class="hover__button" data-buy="addToCart">ADD TO CART</button>
-                                                <a href="#" class="hover__link">SEE DETAILS</a>
+                                            <div class="carousel__hover hover hover--mini">
+                                                <button data-buy="addToCart" class="hover__button">ADD TO CART</button>
+                                                <a href="single-product.html" class="hover__link">SEE DETAILS</a>
                                             </div>
                                             <img class="carousel__img" src="./img/product/product-1.jpg">
-                                            
                                         </div>
-                                        
-                                        
                                         <div class="carousel__name">iPhone 6S</div>
                                         <div class="carousel__price">
                                             <div class="carousel__price--new">$1200</div>

@@ -1,12 +1,16 @@
 .category-name{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     &__list{
         display: flex;
-        margin-right: 10px;
+        margin-right: rem(10px);
+        @include tablets{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__item {
-        padding-left: 10px;
+        padding-left: rem(10px);
     }
     &__link{
         color:$blue;

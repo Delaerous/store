@@ -4,6 +4,9 @@
     }
     &__wrapper{
         width: 50%;
+        @include mobile-mini{
+            width: 25%;
+        }
     }
     
     

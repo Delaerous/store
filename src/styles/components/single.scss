@@ -1,35 +1,51 @@
 .single{
     font-family:Arial, Helvetica, sans-serif;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
     &__img{
-        max-height: 90px;
-        margin-right: 15px;
+        max-height: rem(90px);
+        margin-right: rem(15px);
         &--sidebar{
-            max-height: 63px;
+            max-height: rem(63px);
         }
     }
     &__name{
-        margin-bottom: 12px;
+        margin-bottom: rem(12px);
         &--sidebar{
-            font-size: 20px;
+            font-size: rem(20px);
+            @include tablets{
+                font-size: $baseFontSize - 2px;
+            }
         }
     }
     &__score{
-        margin-bottom: 10px;
-        max-width: 100px;
+        margin-bottom: rem(10px);
+        max-width: rem(100px);
         display: flex;
+        @include mobile-mini{
+            display: none;
+            &--visible {
+                display: flex;
+                justify-content: center;
+            }
+        }
         &-item{
-            max-height: 14px;
+        max-height: rem(14px);
         color: #ffc808;
-        max-width: 40px;
+        max-width: rem(40px);
+        @include mobile-mini{
+            max-height: rem(30px);
+        }
         }
     }
     &--sidebar{
-        margin-bottom: 30px;
+        margin-bottom: rem(30px);
         &:last-child{
             margin-bottom: 0;
         }
+    }
+    &__link{
+        display: flex;
     }
    
 }

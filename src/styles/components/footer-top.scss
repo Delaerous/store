@@ -1,18 +1,24 @@
 .footer-top{
+    
     &__list{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 25px;
+        display: flex;
+        justify-content: space-between;
+        @include tablets{
+            flex-wrap: wrap;
+            margin-right: rem(0px);
+            justify-content:space-between
+        }
+        
     }
     &__content{
         p{
-            margin-bottom: 30px;
+            margin-bottom: rem(30px);
         }
     }
     &__item{
-        padding: 10px 0px;
+        padding: rem(10px) 0;
         &:nth-child(1) {
-            padding: 0 0 5px 0;
+            padding: 0 0 rem(5px) 0;
         }
         &:hover{
             color:$green;
@@ -21,14 +27,30 @@
     }
     &__link{
         
-        border-bottom: 1px dashed #555;
+        border-bottom: rem(1px) dashed #555;
         display: block;
-        padding: 5px 0px;
+        padding: rem(5px) 0px;
         &:nth-child(1) {
-            padding: 0 0 5px 0;
+            padding: 0 0 rem(5px) 0;
         }
 
     }
+    &__column{
+        
+            max-width: 25%;
+        
+        @include tablets{
+            max-width: 46%;
+            margin-right: rem(25px);
+            &:nth-child(2n){
+                margin-right: 0;
+            }
+           
+            
+        }
+        
+    }
+   
 }
 .blue{
     color:$blue;

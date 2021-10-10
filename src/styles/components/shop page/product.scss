@@ -1,6 +1,6 @@
 .product{
     &__wrapper{
-        padding: 50px 0;
+        padding: rem(50px) 0;
     }
     &__list {
     display:grid;
@@ -9,8 +9,8 @@
     &__item{
         list-style: none;
         position: relative;
-        width: 212px;
-        margin-right: 20px;
+        width: rem(212px);
+        margin-right: rem(20px);
         overflow: hidden;
     }
 }

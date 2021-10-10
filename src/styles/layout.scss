@@ -1,5 +1,7 @@
 @import "components/variables";
-
+@function rem($px) {
+    @return $px / $baseFontSize+0rem;
+}
 
 html,
 body {
@@ -17,36 +19,23 @@ body {
 }
 
 
+$ipad: 768px;
+$mobile: 480px;
+$mobile-mini: 320px;
+
+
 @mixin tablets {
-    @media screen and (max-width: $tablets) and (orientation:portrait) {
+    @media screen and (max-width: $ipad) and (orientation:portrait) {
         @content;
     }
 }
 
 @mixin mobile {
-    @media screen and (max-width: $mobile) and (orientation:portrait) {
+    @media  screen  and  (max-width: 767px)  {
         @content;
-    }
+    } 
 }
 
-
-@mixin tablets-landscape {
-    @media screen and (device-width: $tablets-landscape) and (orientation:landscape) {
-        @content;
-    }
-}
-
-@mixin iphoneX-landscape {
-    @media screen and (device-height: $iphoneX-landscape) and (orientation:landscape) {
-        @content;
-    }
-}
-
-@mixin mobile-landscape {
-    @media screen and (device-height: $mobile-landscape) and (orientation:landscape) {
-        @content;
-    }
-}
 
 @mixin mobile-mini {
     @media screen and (max-width: $mobile-mini) and (orientation:portrait) {
@@ -72,13 +61,6 @@ html {
         font-size: $baseFontSize - 2px;
     }
 
-    @include iphoneX-landscape {
-        font-size: $baseFontSize - 2px;
-    }
-
-    @include mobile-landscape {
-        font-size: $baseFontSize - 2px;
-    }
 }
 
 body {
@@ -87,11 +69,12 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+    overflow-x: hidden;
     color:$black;
+    padding: 0;
 }
 
-.body__block {
+.noScroll {
     overflow: hidden;
 }
 
@@ -134,13 +117,14 @@ ul li {
 
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: rem(15px);
+    padding-left:rem(15px);
     margin: 0 auto;
     max-width: $containerWidth;
+    @include tablets{
+        $containerWidth:750px;
+        max-width: $containerWidth;
+    }
 
 }
 
-@function rem($px) {
-    @return $px / $baseFontSize+0rem;
-}

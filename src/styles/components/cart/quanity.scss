@@ -3,10 +3,22 @@
         background-color: $blue;
         border: none;
         color: $white;
-        height: 25px;
-        width: 25px;
+        height: rem(25px);
+        width: rem(25px);
+        &:last-child{
+            margin-left: rem(5px);
+            @include mobile-mini{
+                margin-left: rem(0px)
+            }
+        }
+        &:first-child{
+            margin-right: rem(5px);
+            @include mobile-mini{
+                margin-right: rem(0px)
+            }
+        }
     }
     &__number{
-        max-width: 50px;
+        max-width: rem(50px);
     }
 }

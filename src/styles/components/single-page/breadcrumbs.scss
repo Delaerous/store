@@ -2,7 +2,7 @@
     display: flex;
     &__item{
         &::after {
-            padding: 8px;
+            padding: rem(8px);
             color: black;
             content: "/\00a0";
             

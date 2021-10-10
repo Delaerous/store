@@ -1,14 +1,20 @@
 .cart-bottom{
     display: flex;
+    @include mobile-mini{
+        flex-direction: column;
+    }
     &__title{
         color:$blue;
-        font-size: 25px;
-        margin-bottom: 25px;
+        font-size: rem(25px);
+        margin-bottom: rem(25px);
         text-transform: uppercase;
         font-weight: 500;
         &:hover{
             color:$green;
             text-decoration: underline;
+        }
+        @include mobile-mini{
+            font-size: 12px;
         }
     }
 }
@@ -17,5 +23,5 @@
     text-decoration: underline;
 }
 .totals {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
