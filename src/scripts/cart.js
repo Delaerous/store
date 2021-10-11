@@ -26,9 +26,15 @@ let buyItem = localStorage.getItem('buyItem') || 0;
     clickToBuy.forEach(btn => 
         btn.addEventListener('click', event=> {
             onClick();
+            btn.classList.add("progress");
+            setTimeout(function(){
+              btn.classList.remove("progress");
+            }, 1500);
+
         }
     
     ));
+    
     }
 
     

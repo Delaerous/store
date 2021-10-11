@@ -1,0 +1,53 @@
+[33mcommit ef1101ced6c8999978f207182a8c2451812224e7[m[33m ([m[1;36mHEAD -> [m[1;32mmbItsWrong[m[33m)[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Sun Oct 10 17:29:24 2021 +0300
+
+    adaptive
+
+[33mcommit 10de495895151fb1af3ae80e8620ae0e034bf872[m[33m ([m[1;31morigin/mbItsWrong[m[33m)[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Wed Oct 6 18:42:43 2021 +0300
+
+    without adaptive
+
+[33mcommit 81e6566d3f94ee99c580d9e8ae245aa5dfa4266b[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Wed Oct 6 15:46:34 2021 +0300
+
+    new carousel with hover
+
+[33mcommit 7369b3df8ce1d237060efa2224d949771a5e9f7f[m[33m ([m[1;32mmain[m[33m)[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Tue Oct 5 21:57:17 2021 +0300
+
+    newCarousel
+
+[33mcommit 2b2683728393f94e24f2f796215f0bc92acf570a[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Tue Oct 5 19:03:52 2021 +0300
+
+    pagination v2.0
+
+[33mcommit 151dd83bb75e9d126962fba20f4f3760be4b3165[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Tue Oct 5 14:43:19 2021 +0300
+
+    pagination v.1
+
+[33mcommit 5e075752d35e6296d4cbd5d3abbee770353143da[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Mon Oct 4 20:22:18 2021 +0300
+
+    without pagination
+
+[33mcommit 5d9f11574f864400155f7d5cb39e0f90ad6eb955[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Sat Oct 2 14:19:47 2021 +0300
+
+    cart
+
+[33mcommit f7a735d0c184a5443a9ac2e583b269cb9bc5eecf[m
+Author: Maks <Delaerous12@yandex.ru>
+Date:   Fri Oct 1 16:37:48 2021 +0300
+
+    first commit
